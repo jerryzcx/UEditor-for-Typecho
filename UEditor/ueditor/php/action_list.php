@@ -8,7 +8,8 @@
 include "Uploader2.class.php";
 
 $sitePath = substr( __TYPECHO_ROOT_DIR__, strlen($_SERVER['DOCUMENT_ROOT']))."/";
-$sitePath = '/'. ltrim($sitePath, "\\");
+// $sitePath = '/'. ltrim($sitePath, "\\");
+$sitePath = ''. ltrim($sitePath, "\\"); // by zj
 
 /* 判断类型 */
 switch ($_GET['action']) {

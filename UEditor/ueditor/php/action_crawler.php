@@ -9,7 +9,8 @@ set_time_limit(0);
 include("Uploader2.class.php");
 
 $sitePath = substr( __TYPECHO_ROOT_DIR__, strlen($_SERVER['DOCUMENT_ROOT']))."/";
-$sitePath = '/'. ltrim($sitePath, "\\");
+// $sitePath = '/'. ltrim($sitePath, "\\");
+$sitePath = ''. ltrim($sitePath, "\\"); // by zj
 
 /* 上传配置 */
 $config = array(
